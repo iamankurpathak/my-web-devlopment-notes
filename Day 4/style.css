@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+.parent{
+    background-color: rgb(27, 157, 238);
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.childone:hover{
+    background-color: pink;
+    color: black;
+    transition:1s ease-in;
+    transform: scale(1.4);
+}
+.childone{
+    height: 400px;
+    width: 500px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.childtwo:hover{
+    background-color: pink;
+    color: black;
+    transition:1s ease-in;
+    transform: scale(1.4);
+}
+
+.navbar{
+    display: flex;
+    height: 9vh;
+    align-items: center;
+    padding: 0 100px;
+}
+.logo{
+    flex: 1;
+}
+.menus{
+    flex: 3;
+}
+.menus ul{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+.menus ul li a{
+    text-decoration: none;
+    font-family: "Rubik Wet Paint", system-ui;
+    color: red;
+}
+.rocket{
+    background-image: url(https://www.nasa.gov/wp-content/uploads/2024/11/nasa-holiday-fireplace-key-art-r1-horizontal-program-tile-16-9-without-title.jpg?resize=2000,1125);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-transform: capitalize;
+    padding-left: 10%;
+    font-weight: 900;
+}
