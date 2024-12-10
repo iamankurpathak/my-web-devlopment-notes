@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            height: 400px;
+            width: 400px;
+            background-color: brown;
+            box-shadow: 2px 2px 2px 2px solide black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>hello world</h1>
+    <h1 id="name">hello</h1>
+    <div id="box"></div>
+    <script>
+        console.log("this is js from frontend")
+
+        // // for (let i = 0; i < 10; i++) {
+        // //     console.log(i)
+        // //     console.log("Ankur")
+        // }
+        // let i = 0
+        // while (i < 11) {
+        //     console.log(`This is while loop running ${i} times`)
+        //     i++
+        // }
+        let j = 0
+        do {
+            console.log(`This is do while loop running ${j} times`)
+            j++;
+        } while (j < 11);
+        const changeName = () => {
+            document.getElementById("name").style.color = "yellow";
+        }
+        const changebox = () => {
+            document.getElementById("box").style.backgroundColor = "yellow";
+            document.getElementById("box").style.borderRadius = "50%";
+        }
+        setTimeout(() => {
+            changeName()
+            changebox()
+        }, 5000)
+        const player = ["Dhoni", "Rohit", "Virat", "Rahul", "Sikhar", "Ruturaj", "Gill"];
+        console.log(player[0]);
+
+        for (let x in player) {
+            console.log(`i want to meet ${player[x]}`)
+        }
+        const age = [77, 88, 42, 4, 9, 62, 43, 40, 80, 60, 55]
+        console.log(age.sort())
+        // ascending order
+        console.log(age.sort((a, b) => a - b))
+        // decending order
+        console.log(age.sort((a, b) => b - a))
+        // mapping
+        age.map((x) => {
+            console.log(`i am ${x} years old using map`)
+        })
+        //for each
+        age.forEach((x) => {
+            console.log(`i am ${x} years old using for each`)
+        })
+        // filter
+        const voters = age.filter((age) => age > 18)
+        console.log(voters)
+        const retired = age.filter((age) => age > 60)
+        console.log(retired)
+
+        const students = ["Ankur", "Rohit", "john", "Rahul", "Vishal", "suraj", "Aman"]
+        const slicedArray = students.slice(0, 3)
+        console.log(slicedArray)
+
+        console.log("original array", students)
+        const splicedArray = students.splice(2, 2, "Mohit", "Sobhit")
+        console.log(students)
+
+        const checkName = students.includes("Aman")
+        console.log(checkName)
+
+        const sampleNegative = students.at(-4)
+        console.log(sampleNegative)
+
+        var name = "sujit"
+        var name = "sujita"
+        function myfunction() {
+            console.log(name)
+        }
+
+        let student = {
+            name: "John",
+            class: "xii",
+            rollNo: "20",
+            marks: "88"
+        }
+
+        let car = {
+            brand: "ford",
+            name: "mustang",
+            model: "x",
+            year: "1990"
+        }
+        console.log("these are the values", Object.values(car))
+        console.log("these are the keys", Object.keys(car))
+
+        const student2 = {
+            firstname: "Ankur",
+            lastname: "Pathak",
+            fathername: "Sanjay Pathak",
+            class: "B.Tech",
+            rollNo: "19",
+        }
+        console.log("these are the values", Object.values(student2))
+        console.log("these are the keys", Object.keys(student2))
+
+
+    </script>
+
+</body>
+
+</html>

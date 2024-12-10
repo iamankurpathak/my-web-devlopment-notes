@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>My name is <span id="name">Jhon Kumar</span></h1>
+    <button onclick="changename()">Change Your name</button>
+
+
+    <script>
+        const changename = () => {
+            const name = prompt("enter your name")
+            document.getElementById("name").innerHTML = name
+            let box =document.getElementById("box")
+            box.style.backgroundColor="red"
+        }
+    </script>
+
+</body>
+
+</html>

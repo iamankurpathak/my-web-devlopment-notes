@@ -1,0 +1,45 @@
+.parent{
+    height: 100vh;
+    background-color: yellow;
+}
+.box1{
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+.box2{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    position: absolute;
+   bottom: 100px;
+   left: 40px;
+}
+.box3{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: absolute;
+    top: 10px;
+    right: 40px;;
+}
+.box4{
+    height: 200px;
+    width: 200px;
+    background-color: orchid;
+    position: absolute;
+   bottom: 100px;
+  right: 40px;
+}
+.circle{
+    height: 200px;
+    width: 200px;
+    background-color:aliceblue;
+    position: sticky;
+    top: 10px;
+    left: 40px;
+  border-radius: 50%;
+}

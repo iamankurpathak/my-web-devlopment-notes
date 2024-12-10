@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let student = {
+            name: "Sonu",
+            class: "XII",
+            rollNo: 12,
+            marks: 90,
+            address: {
+                state: "chandighar",
+                city: "Manimajra"
+            }
+        }
+        let hospitel = {
+            bed: "69",
+            patient: "96",
+            doctors: {
+                name: "sonu",
+                city: "Manimajra"
+            }
+        }
+        const car = {
+            name: "Audi",
+            model: "VI",
+            year: 2011
+        }
+        console.log("These are the values", Object.values(car))
+        console.log("These are the keys", Object.keys(car))
+        console.log("These are the keys", Object.keys(student))
+        console.log("These are the values",Object.values(student))
+
+        const car2 = {
+            name: "Audi",
+            model: "VI",
+            year: 2011,
+            feature: {
+                color: ["red", "yellow", "green"],
+                engine: "V0",
+                top_speed: '400 km/hr'
+            }
+        }
+        student.name = "sonu"
+        console.log("The name of the student is", student.name)
+    </script>
+
+</body>
+
+</html>
